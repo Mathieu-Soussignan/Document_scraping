@@ -39,6 +39,11 @@ else:
     else:
         st.error(f"Le fichier '{file_path}' n'existe pas.")
 
+    # Ajouter un lien visuel vers l'application Streamlit de scraping dans la barre latérale
+    st.sidebar.markdown("---")
+    st.sidebar.markdown("### Application de scraping")
+    st.sidebar.markdown("[Cliquez ici pour accéder à l'application de scraping](https://scraping-imdb.streamlit.app/)")
+
 # Section pour feedback utilisateur
 st.sidebar.title("Feedback")
 st.sidebar.text_area("Vos commentaires :")
